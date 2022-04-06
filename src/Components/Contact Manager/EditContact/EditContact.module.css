@@ -1,0 +1,32 @@
+.container {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%;
+  border-radius: 15px;
+}
+.container input {
+  margin-top: 3px;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.container input:focus {
+  border: 2px solid blueviolet;
+}
+.container button {
+  outline: none;
+  background-color: rgb(116, 192, 3);
+  color: #fff;
+  border: 1px solid rgb(116, 192, 3);
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+}

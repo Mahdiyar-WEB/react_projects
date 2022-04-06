@@ -1,0 +1,12 @@
+.container {
+  margin-top: 10px;
+  width: 500px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.addItemMessage{
+  margin-top: 20px;
+  margin-left: 43%;
+}

@@ -1,0 +1,17 @@
+.activeLink {
+  color: #fff;
+}
+.navLink {
+  color: rgba(255, 255, 255, 0.6);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.container2 {
+  display: flex;
+  gap: 20px;
+}

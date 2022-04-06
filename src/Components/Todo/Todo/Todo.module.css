@@ -1,0 +1,29 @@
+.container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container p {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.edit_btn {
+  border: 1px solid rgb(110, 3, 209);
+  background-color: #fff;
+  color: rgb(110, 3, 209);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete_btn {
+  border: 1px solid rgb(238, 86, 86);
+  color: rgb(238, 86, 86);
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}

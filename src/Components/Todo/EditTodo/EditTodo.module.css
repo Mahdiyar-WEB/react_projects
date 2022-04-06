@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 5px;
+  padding: 20px 0;
+}
+.container input {
+  padding: 8px 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(110, 3, 209);
+}
+.container input:focus {
+  border: 2px solid rgb(110, 3, 209);
+}
+.container button {
+  cursor: pointer;
+  background-color: #fff;
+  color: rgb(110, 3, 209);
+  border: 1px solid rgb(110, 3, 209);
+  border-radius: 3px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+  background-color: rgb(241, 240, 240);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.container:hover {
+  background-color: rgb(228, 226, 226);
+}
+.container div {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.expense {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background-color: rgb(238, 68, 68);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.trash {
+  vertical-align: bottom;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: rgb(250, 25, 25);
+  transform: translateY(4px);
+}
+
+.income {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 187, 0, 0.918);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.desc {
+  width: 10ch;
+  text-overflow: ellipsis;
+  overflow: hidden !important;
+}

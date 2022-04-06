@@ -1,0 +1,45 @@
+.container {
+  border:1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.userIcon {
+  font-size: 24px;
+}
+.details2 {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+}
+.details2 span:nth-of-type(1) {
+  font-weight: 700;
+}
+.show_btn {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+.submit_btn {
+  background-color: #fff;
+  color: red;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.details3 {
+  display: flex;
+}

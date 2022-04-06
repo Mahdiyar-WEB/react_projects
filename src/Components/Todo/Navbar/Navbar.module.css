@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.navbar h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.remaining {
+  width: 25px;
+  height: 25px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6e03d1;
+  background-color: #7f01f549;
+  font-weight: 400;
+}
