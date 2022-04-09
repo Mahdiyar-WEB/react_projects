@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useState } from "react";
+import React, { useContext, useReducer } from "react";
 
 const TodosContext = React.createContext();
 const TodosContextDispatcher = React.createContext();
@@ -51,7 +51,10 @@ const reducer = (state, action) => {
         const uncompleted = filterTodos.filter((todo) => !todo.isCompleted);
         return uncompleted;
       }
-    }
+      break;
+      }
+    default:
+      return state
   }
 };
 

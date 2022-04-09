@@ -1,6 +1,5 @@
 import styles from "./Expense.module.css";
 import { BiTrash } from "react-icons/bi";
-import { IconContext } from "react-icons";
 
 const Expense = ({ desc, type, amount, onDelete }) => {
   return (

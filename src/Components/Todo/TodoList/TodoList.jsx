@@ -2,7 +2,6 @@ import { useState } from "react";
 import Todo from "../Todo/Todo";
 import EditTodo from "../EditTodo/EditTodo";
 import { useTodos, useTodosActions } from "../TodoProvider/TodosProvider";
-import styles from "./TodoList.module.css";
 
 const TodoList = () => {
   const [edit, setEdit] = useState(null);

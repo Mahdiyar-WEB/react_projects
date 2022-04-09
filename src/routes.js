@@ -1,7 +1,3 @@
-import ContactList from "./Components/Contact Manager/ContactList/ContactList";
-import ContactForm from "./Components/Contact Manager/ContactForm/ContactForm";
-import FullContact from "./Components/Contact Manager/FullContact/FullContact";
-import EditContact from "./Components/Contact Manager/EditContact/EditContact";
 import Home from "./pages/Home";
 import ExpenseTrackerApp from "./pages/ExpenseTrackerApp/ExpenseTrackerApp";
 import TodoApp from "./pages/TodoApp/TodoApp";
