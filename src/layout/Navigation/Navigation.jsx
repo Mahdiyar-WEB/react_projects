@@ -17,7 +17,7 @@ const Navigation = () => {
               <li key={index}>
                 <NavLink
                   className={(navData) =>
-                    navData.isActive && styles.active_link
+                    navData.isActive ? styles.active_link : ""
                   }
                   to={item.to}
                 >
