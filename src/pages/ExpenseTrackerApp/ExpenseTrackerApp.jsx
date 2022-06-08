@@ -1,9 +1,9 @@
-import ExpenseTrackerkerker from "../../Components/Expense Tracker/ExpenseTracker/ExpenseTracker";
+import ExpenseTracker from "../../Components/Expense Tracker/ExpenseTracker/ExpenseTracker";
 import styles from "./ExpenseTrackerApp.module.css";
 const ExpenseTrackerApp = ()=>{
     return (
         <div className={styles.container}>
-            <ExpenseTrackerkerker/>
+            <ExpenseTracker/>
         </div>
     )
 }

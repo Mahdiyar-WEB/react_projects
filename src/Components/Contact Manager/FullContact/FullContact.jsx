@@ -19,9 +19,9 @@ const FullContact = () => {
         <h3>
           <BiUserCircle />
         </h3>
-        <h4>Name: {details.name}</h4>
-        <h4>Email: {details.email}</h4>
-        <h4>ID: {details.id}</h4>
+        <h4>Name: <span>{details.name}</span></h4>
+        <h4>Email: <span>{details.email}</span></h4>
+        <h4>ID: <span>{details.id}</span></h4>
       </div>
       <Link to="/contact-app/contacts">
         <button>&larr; Back</button>

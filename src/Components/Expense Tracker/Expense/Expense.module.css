@@ -12,19 +12,17 @@
   background-color: rgb(228, 226, 226);
 }
 .container div {
-  width: 45%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 .expense {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  background-color: rgb(238, 68, 68);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
+border-right:6px solid red ;
+}
+.amount{
+  max-width: 10ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .trash {
   vertical-align: bottom;
@@ -35,13 +33,8 @@
 }
 
 .income {
-  margin: 0;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  background-color: rgba(0, 187, 0, 0.918);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
+ border-right: 6px solid  rgba(0, 187, 0, 0.918);
+
 }
 .desc {
   width: 10ch;

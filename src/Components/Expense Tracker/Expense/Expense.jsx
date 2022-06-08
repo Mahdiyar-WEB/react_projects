@@ -3,15 +3,11 @@ import { BiTrash } from "react-icons/bi";
 
 const Expense = ({ desc, type, amount, onDelete }) => {
   return (
-    <li className={styles.container}>
+    <li className={`${styles.container} ${type === "expense" ? styles.expense : styles.income}`}>
       <div>
         <p className={styles.desc}>{desc}</p>
-        <span className={styles.amount}>$ {amount}</span>
+        <span className={styles.amount}>${amount}</span>
       </div>
-
-      <p className={type === "expense" ? styles.expense : styles.income}>
-        {type}
-      </p>
       <BiTrash onClick={onDelete} className={styles.trash} />
     </li>
   );

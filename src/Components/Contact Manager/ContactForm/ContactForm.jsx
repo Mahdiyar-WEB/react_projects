@@ -1,14 +1,11 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useToasts } from "react-toast-notifications";
 import styles from "./ContactForm.module.css";
 import { useNavigate } from "react-router-dom";
-import http from "../../../services/httpServices";
 const ContactForm = () => {
-  const { addContacts } = http();
   const navigate = useNavigate();
   const { addToast } = useToasts();
   const [details, setDetails] = useState({ name: "", email: "" });
-
   const changeHandler = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
@@ -17,18 +14,23 @@ const ContactForm = () => {
     if (details.name === "" || details.email === "") {
       addToast("Please fill all inputs", { appearance: "error" });
     } else {
-      addContacts(details)
-        .then((res) => {
-          setDetails({ name: "", email: "" });
-          navigate("/contact-app/contacts");
-          addToast("Contact added successfully", { appearance: "success" });
+      const data = JSON.parse(localStorage.getItem("contacts")) || {
+        contacts: [],
+      };
+      localStorage.setItem(
+        "contacts",
+        JSON.stringify({
+          contacts: [
+            ...data.contacts,
+            { ...details, id: Math.floor(Math.random() * 1000) },
+          ],
         })
-        .catch((error) => {
-          alert(error);
-        });
+      );
+      setDetails({ name: "", email: "" });
+      navigate("/contact-app/contacts");
+      addToast("Contact added successfully", { appearance: "success" });
     }
   };
-
   return (
     <Fragment>
       <h3>Add Contact</h3>

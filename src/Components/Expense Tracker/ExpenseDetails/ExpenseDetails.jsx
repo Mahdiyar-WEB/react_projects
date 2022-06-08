@@ -28,7 +28,7 @@ const ExpenseDetails = () => {
     listActions({ type: "search", value: e.target.value });
   };
   return (
-    <div>
+    <div className={styles.container}>
       <input
         className={styles.search}
         type="search"
@@ -37,7 +37,7 @@ const ExpenseDetails = () => {
         onChange={(e) => searchHandler(e)}
       />
       <div className={styles.header}>
-        <h3>Balance: $ {income - expense}</h3>
+        <h3>Balance: $<span className={styles.value}>{income - expense}</span></h3>
         <button className={showForm && styles.cancel} onClick={showFormHandler}>
           {!showForm ? "ADD" : "CANCEL"}
         </button>
@@ -46,11 +46,11 @@ const ExpenseDetails = () => {
       <div className={styles.details}>
         <div>
           <h4>Expense</h4>
-          <h3>$ {expense}</h3>
+          <h3 className={styles.value}>${expense}</h3>
         </div>
         <div>
           <h4>Income</h4>
-          <h3>$ {income}</h3>
+          <h3 className={styles.value}>${income}</h3>
         </div>
       </div>
     </div>

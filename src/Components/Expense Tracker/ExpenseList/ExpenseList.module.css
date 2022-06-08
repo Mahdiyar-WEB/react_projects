@@ -1,12 +1,17 @@
 .container {
-  margin-top: 10px;
-  width: 500px;
+  margin: 10px auto 0;
+  width: 100%;
   padding: 0;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .addItemMessage{
-  margin-top: 20px;
-  margin-left: 43%;
+  width: 70%;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+@media screen and (max-width:500px) {
 }

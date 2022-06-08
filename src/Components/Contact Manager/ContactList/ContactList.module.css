@@ -1,6 +1,7 @@
 .container {
   padding: 10px 0;
   width: 50%;
+  max-width: 500px;
 }
 .head2 {
   margin: 50px 0;
@@ -12,7 +13,18 @@ input[type="search"] {
   border-radius: 5px;
   outline: none;
   width: 30%;
+  max-width: 500px;
 }
 input[type="search"]:focus {
   border: 2px solid blueviolet !important;
+}
+
+@media screen and (max-width: 890px) {
+  .container{
+    width: 100%;
+    padding: 10px 15px;
+  }
+  input[type="search"] {
+    width: 50%;
+  }
 }

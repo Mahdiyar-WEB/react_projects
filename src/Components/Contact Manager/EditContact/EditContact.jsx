@@ -1,17 +1,16 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation,useParams } from "react-router-dom";
 import queryString from "query-string";
 import { useEffect, useState } from "react";
 import { useToasts } from "react-toast-notifications";
 import styles from "./EditContact.module.css";
-import http from "../../../services/httpServices";
 
 const EditContact = () => {
-  const { updateContact } = http();
   const navigate = useNavigate();
   const { addToast } = useToasts();
   const [text, setText] = useState({ name: "", email: "" });
   const { search } = useLocation();
-
+  const {id} = useParams();
+  
   useEffect(() => {
     const query = queryString.parse(search);
     setText(query);
@@ -20,15 +19,23 @@ const EditContact = () => {
   const changeHandler = (e) => {
     setText({ ...text, [e.target.name]: e.target.value });
   };
-  const submitHandler = async (e) => {
+  const submitHandler =  (e) => {
     e.preventDefault();
     if (text.name === "" || text.email === "") {
       addToast("Please fill all inputs", { appearance: "error" });
     } else {
-      updateContact(text.id, text).then((res) => {
+        const {contacts} = JSON.parse(localStorage.getItem("contacts"));
+        console.log(contacts);
+        console.log(id);
+        const index = contacts.findIndex(contact=> contact.id === Number(id));
+        const definedContacts = contacts[index];
+        console.log(definedContacts);
+        definedContacts.name = text.name;
+        definedContacts.email = text.email;
+        contacts[index] = definedContacts;
+        localStorage.setItem("contacts",JSON.stringify({contacts:[...contacts]}));
         navigate("/contact-app/contacts");
         addToast("Contact edited successfully ", { appearance: "success" });
-      });
     }
   };
   return (

@@ -4,11 +4,18 @@
     width: 100%;
     padding: 20px 0;
     gap: 15px;
-    background-color: rgba(0, 0, 0, .9);
+    font-size: 1.1rem;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .6);
+    background-color: #0878c9;
 }
 .container a{
-    color: rgba(255, 255, 255, .7) ;
+    color: rgba(255, 255, 255, .8);
 }
 .active_link{
     color: #fff !important;
+}
+@media screen and (max-width:480px) {
+    .container a{
+        font-size: 13px;
+    }
 }

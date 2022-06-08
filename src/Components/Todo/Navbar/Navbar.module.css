@@ -20,3 +20,10 @@
   background-color: #7f01f549;
   font-weight: 400;
 }
+/* @media screen and (max-width:480px) {
+  .navbar{
+    border: 1px solid black;
+    width: 100%;
+    justify-content: space-between;
+  }
+} */

@@ -43,3 +43,25 @@
 .details3 {
   display: flex;
 }
+
+@media screen and (max-width: 480px) {
+  .details2 span:nth-of-type(2){
+    display: none;
+  }
+  .container{
+    padding: 10px 5px;
+  }
+  .show_btn{
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 0 10px 0 0;
+  }
+  .submit_btn{
+    font-size: 20px;
+  }
+}
