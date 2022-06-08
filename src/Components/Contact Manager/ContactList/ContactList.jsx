@@ -31,7 +31,7 @@ const ContactList = () => {
   };
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("contacts")) || [];
+    const data = JSON.parse(localStorage.getItem("contacts")) || {contacts:[]};
     allContacts = [...contacts, ...data.contacts];
     setContacts(allContacts);
   }, []);
