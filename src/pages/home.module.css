@@ -11,12 +11,13 @@ gap: 20px;
     padding: 10px 25px;
     border-radius: 20px;
     color: #fff;
+    margin-top: 20px;
     background: linear-gradient(to right,#340B61,#B12471);
 
 }
 .container img{
     max-width: 500px;
-    animation: animate1 8s infinite linear;
+    animation: animate1 12s infinite linear;
 }
 @keyframes animate1 {
  0%{

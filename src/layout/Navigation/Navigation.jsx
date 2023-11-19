@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 import styles from "./navigation.module.css";
 const items = [
   { label: "Home", to: "/" },
-  { label: "TodoApp", to: "/todo-app" },
+  { label: "Todo App", to: "/todo-app" },
   { label: "Expense Tracker", to: "/expense-tracker" },
-  { label: "ContactApp", to: "/contact-app" },
+  { label: "Contact App", to: "/contact-app/contacts" },
 ];
 
 const Navigation = () => {

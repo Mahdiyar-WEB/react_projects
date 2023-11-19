@@ -30,7 +30,7 @@ const Contact = ({ contact, onDelete }) => {
             search: `name=${name}&email=${email}&id=${id}`,
           }}
         >
-          <button className={styles.show_btn}>Edit</button>
+          <button className={styles.edit_btn}>Edit</button>
         </Link>
         <button className={styles.submit_btn} onClick={onDelete}>
           <BiTrash />

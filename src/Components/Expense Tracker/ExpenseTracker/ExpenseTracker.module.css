@@ -7,6 +7,9 @@
   width: 100vw;
   border-radius: 1.3rem;
 }
+.container h2{
+  margin-bottom: 20px;
+}
 @media screen and (max-width:500px) {
   .container{
     padding: 1.5rem 0;

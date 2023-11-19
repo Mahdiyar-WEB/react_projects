@@ -35,7 +35,7 @@ const ExpenseForm = ({ onSubmit }) => {
         onChange={changeHandler}
         ref={descriptionRef}
         className={styles.inputs}
-        placeholder="Description..."
+        placeholder="Description"
       />
       <input
         value={formValues.amount}
@@ -43,7 +43,7 @@ const ExpenseForm = ({ onSubmit }) => {
         name="amount"
         onChange={changeHandler}
         className={styles.inputs}
-        placeholder="Amount..."
+        placeholder="Amount"
       />
       <div className={styles.details}>
         <div>

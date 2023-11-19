@@ -15,21 +15,21 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .expense {
 border-right:6px solid red ;
 }
 .amount{
-  max-width: 10ch;
+  max-width: 15ch;
+  word-wrap: break-word;
+  text-align: center;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .trash {
-  vertical-align: bottom;
   font-size: 1.3rem;
-  cursor: pointer;
+  margin: auto 0;
   color: rgb(250, 25, 25);
-  transform: translateY(4px);
 }
 
 .income {
@@ -37,7 +37,12 @@ border-right:6px solid red ;
 
 }
 .desc {
-  width: 10ch;
-  text-overflow: ellipsis;
-  overflow: hidden !important;
+  width: 20ch;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 640px) {
+  .desc {
+    width: 10ch;
+  }
 }

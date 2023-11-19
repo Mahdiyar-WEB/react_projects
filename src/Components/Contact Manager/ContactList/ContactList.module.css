@@ -18,7 +18,10 @@ input[type="search"] {
 input[type="search"]:focus {
   border: 2px solid blueviolet !important;
 }
-
+.noContact{
+  text-align: center;
+  margin-top: 20px;
+}
 @media screen and (max-width: 890px) {
   .container{
     width: 100%;

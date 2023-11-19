@@ -40,7 +40,7 @@ const ContactList = () => {
     <Fragment>
       <input
         type="search"
-        placeholder="Search..."
+        placeholder="Search"
         style={{ marginTop: "20px" }}
         onChange={(e) => changeHandler(e.target.value)}
       />
@@ -55,6 +55,7 @@ const ContactList = () => {
             />
           );
         })}
+        {!contacts.length && <h2 className={styles.noContact}>Please add contact</h2>}
       </ul>
     </Fragment>
   );

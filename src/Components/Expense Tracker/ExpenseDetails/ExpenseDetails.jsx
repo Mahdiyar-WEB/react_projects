@@ -32,12 +32,17 @@ const ExpenseDetails = () => {
       <input
         className={styles.search}
         type="search"
-        placeholder="Search..."
+        placeholder="Search"
         value={search}
         onChange={(e) => searchHandler(e)}
       />
       <div className={styles.header}>
-        <h3>Balance: $<span className={styles.value}>{income - expense}</span></h3>
+        <h3>
+          Balance: $
+          <span className={styles.value}>
+            {(income - expense).toLocaleString()}
+          </span>
+        </h3>
         <button className={showForm && styles.cancel} onClick={showFormHandler}>
           {!showForm ? "ADD" : "CANCEL"}
         </button>
@@ -46,11 +51,11 @@ const ExpenseDetails = () => {
       <div className={styles.details}>
         <div>
           <h4>Expense</h4>
-          <h3 className={styles.value}>${expense}</h3>
+          <h3 className={styles.value}>${Number(expense).toLocaleString()}</h3>
         </div>
         <div>
           <h4>Income</h4>
-          <h3 className={styles.value}>${income}</h3>
+          <h3 className={styles.value}>${Number(income).toLocaleString()}</h3>
         </div>
       </div>
     </div>

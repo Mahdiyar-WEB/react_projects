@@ -16,7 +16,7 @@
 }
 .value{
   display: inline-block;
-  max-width: 10ch;
+  max-width: 15ch;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -37,12 +37,13 @@
 .details {
   margin-top: 15px;
   display: flex;
+  gap: 0 10px;
   justify-content: space-between;
 }
 .details div {
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  width: 45%;
+  flex-grow: 1;
   padding: 10px 10px;
   flex-direction: column;
   align-items: flex-start;
@@ -63,7 +64,8 @@
 .search {
   width: 100% !important;
   padding: 8px 15px;
-  background-color: rgb(231, 231, 231);
+  color: #000;
+  background-color: #f3f4f6;
   border: none;
   outline: none;
   border-radius: 10px;
