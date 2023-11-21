@@ -1,33 +1,49 @@
-# Common React Projects
+# React Projects
 
-### Topics
+This repository is a collection of small but powerful React applications designed to showcase various aspects of the React framework and related libraries. It includes a Todo app, an Expense Tracker, and a Contacts app, designed to provide practical functionality while demonstrating clean coding practices.
 
-1. react-router-dom(RRD)
-2. work with react hooks such as    useState,useEffect,useContext,useReducer,useMemo,useRef
-3. higer order component
-4. use CRUD with localStorage
-5. modular css files
-and...
+## Table of Contents
+- [Introduction](#introduction)
+- [Included Projects](#included-projects)
+  - [Todo App](#todo-app)
+  - [Expense Tracker](#expense-tracker)
+  - [Contacts App](#contacts-app)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
 
-### Challenges
-1. filter states
-2. pass functions and data as props
-3. redirect and set query string in react-router-dom
-4. create Layout component for use website header in all urls
-5. use the best method for context+reducer
-6. conditional rendering
-7. ternary operator and spread operator
-8. js methods like filter, find, findeIndex, map, indexOf, includes, slice
+## Introduction
 
-### Packages
-- react-router-dom
-- query-string
-- react-select
-- react-toast-notifications
-- react-icons
-- lodash
+This `react_projects` repository is designed as a multi-faceted platform to explore and interact with different functionalities commonly seen in web applications. Each app within this repository serves a unique purpose and utilizes a stack of technologies to achieve optimal performance and user experience.
 
-### Programmer Descriptions:
-  at first sorry for my poor en language 
-  
-  I did not have enough time to develop responsive and better ui for this program because of the university, otherwise I would have provided a better user interface. Thank you for taking the time to read this information😘
+## Included Projects
+
+### Todo App
+Manage your daily tasks with simplicity and ease.
+
+### Expense Tracker
+Keep track of your expenses and budget in a user-friendly interface.
+
+### Contacts App
+Organize your contacts in a centralized and accessible place.
+
+## Technologies Used
+
+- React.js
+- Axios - Promise based HTTP client for the browser and Node.js
+- react-toast-notifications - For adding toast notifications
+- react-select - For building select control for React
+- query-string - For parsing and formatting URL query strings
+
+## Setup and Installation
+
+To get a local copy of these projects up and running, follow these simple steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Mahdiyar-WEB/react_projects.git
+
+# Navigate to the repository
+cd react_projects
+
+# Install the dependencies for each project
+npm install
